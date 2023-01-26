@@ -15,7 +15,7 @@
         }
 
         .bg {
-            background-color: rgb(214, 210, 210);
+            background-color: rgb(133, 132, 132);
             height: 100vh;
             transition: 1s;
         }             
@@ -65,10 +65,41 @@
             font-size: 50px;
             font-family: arial;
             opacity: 0;
+            color: white;
+            transition: 1s;
         }
 
+        div.red:hover ~ div.bg {
+            background-color: rgb(225, 13, 13);
+        }
+
+        div.green:hover ~ div.bg {
+            background-color: rgb(55, 225, 13);
+        }
+
+        div.blue:hover ~ div.bg {
+            background-color: rgb(13, 20, 225);
+        }
+
+        div.orange:hover ~ div.bg {
+            background-color: rgb(225, 168, 13);
+        }
         
-        
+        div.red:hover ~ div.bg p.red {
+            opacity: 1;
+        }
+
+        div.green:hover ~ div.bg p.green {
+            opacity: 1;
+        }
+
+        div.blue:hover ~ div.bg p.blue {
+            opacity: 1;
+        }
+
+        div.orange:hover ~ div.bg p.orange {
+            opacity: 1;
+        }
         
 
     </style>
